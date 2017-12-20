@@ -6,5 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Justin = User.create(name: "Justin", email_address:"jtnshieh@gmail.com")
-TestEmail = Email.create(subject: "Test", body: "Test Again", user_id: Justin.id)
+TestEmail = Email.create(subject: "Test", body: "Test Again", to_email_address: "jtnshieh@gmail.com")
