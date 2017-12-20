@@ -49,6 +49,8 @@ class EmailForm extends React.Component{
           value={this.state.body}
           onChange={this.update('body')}
         />
+        <br/>
+        <br/>
         <input
           type="submit"
           value="Submit"
