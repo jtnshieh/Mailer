@@ -6,8 +6,8 @@ const Root = () => (
   <HashRouter>
     <div>
       <Switch>
-        <Route path='/sendEmail' component={EmailForm}/>
-        <Route path='/success' render={() => <span>Successfully sent!</span>}/>
+        <Route exact path='/' component={EmailForm}/>
+        <Route exact path='/success' render={() => <span>Successfully sent!</span>}/>
       </Switch>
     </div>
   </HashRouter>
