@@ -22,7 +22,8 @@ class EmailForm extends React.Component{
   handleSubmit(e) {
     e.preventDefault();
     const email = Object.assign({}, this.state);
-    this.props.createEmail(email).then(() => this.props.history.push('/success'));
+    createEmail(email);
+    this.props.history.push('/success');
   }
 
   render() {
@@ -34,23 +35,27 @@ class EmailForm extends React.Component{
           type='text'
           value={this.state.to_email_address}
           onChange={this.update('to_email_address')}
-          />
+        />
         <br/>
         <h3>Subject</h3>
         <input
           type='text'
           value={this.state.subject}
           onChange={this.update('subject')}
-          />
+        />
         <br/>
         <h3>Body</h3>
         <textarea
           value={this.state.body}
           onChange={this.update('body')}
-          />
+        />
+        <input
+          type="submit"
+          value="Submit"
+        />
       </form>
     );
-    
+
   }
 }
 
