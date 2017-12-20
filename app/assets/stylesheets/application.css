@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+.form {
+  text-align: center;
+}
+
+.email-address-input, .subject-input {
+  width: 300px;
+  height: 20px;
+  font-size: 15px;
+}
+
+.body-input {
+  width: 400px;
+  height: 100px;
+  font-size: 15px;
+}
+
+.submit-button {
+  font-size: 30px;
+}

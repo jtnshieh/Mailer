@@ -29,9 +29,10 @@ class EmailForm extends React.Component{
   render() {
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="form">
         <h3>Email Address</h3>
         <input
+          className="email-address-input"
           type='text'
           value={this.state.to_email_address}
           onChange={this.update('to_email_address')}
@@ -39,6 +40,7 @@ class EmailForm extends React.Component{
         <br/>
         <h3>Subject</h3>
         <input
+          className="subject-input"
           type='text'
           value={this.state.subject}
           onChange={this.update('subject')}
@@ -46,12 +48,14 @@ class EmailForm extends React.Component{
         <br/>
         <h3>Body</h3>
         <textarea
+          className="body-input"
           value={this.state.body}
           onChange={this.update('body')}
         />
         <br/>
         <br/>
         <input
+          className="submit-button"
           type="submit"
           value="Submit"
         />
