@@ -7,6 +7,11 @@ class EmailsController < ApplicationController
     end
   end
 
+  def index
+    @emails = Email.all
+    render json: ["It's working."]
+  end
+
   private
 
   def email_params
